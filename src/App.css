@@ -108,7 +108,7 @@ nav a {
   display: grid;
   grid-template-columns: 1fr 360px;
   gap: 24px;
-  background: linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0.01));
+  background: linear-gradient(180deg, rgba(0,0,0,0.05), rgba(0,0,0,0.03));
   padding: 20px;
   border-radius: 8px;
   align-items: center;
