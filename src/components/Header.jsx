@@ -5,36 +5,34 @@ function Header() {
     const targetElement = document.getElementById(targetId);
 
     if (targetElement) {
-      const headerOffset = 20; // Small offset for better visibility
-      const elementPosition = targetElement.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
       });
     }
   };
 
   return (
     <header>
-      <div className="brand">
-        <div className="logo">D</div>
-        <div className="brand-text">
-          <div className="brand-title">Dunses</div>
-          <div className="brand-tagline">From Leaf to Cup</div>
+      <div className="header-content">
+        <div className="brand">
+          <div className="logo">D</div>
+          <div className="brand-text">
+            <p className="brand-title">Dunses</p>
+            <p className="brand-tagline">From Leaf to Cup</p>
+          </div>
         </div>
+        <nav>
+          <a href="#hero" onClick={handleNavClick}>Home</a>
+          <a href="#products" onClick={handleNavClick}>Products</a>
+          <a href="#services" onClick={handleNavClick}>Services</a>
+          <a href="#team" onClick={handleNavClick}>Team</a>
+          <a href="#contact" onClick={handleNavClick}>Contact</a>
+        </nav>
+        <a href="#" className="cta">Login</a>
       </div>
-      <nav>
-        <a href="#hero" onClick={handleNavClick}>Home</a>
-        <a href="#products" onClick={handleNavClick}>Products</a>
-        <a href="#services" onClick={handleNavClick}>Services and Solutions</a>
-        <a href="#team" onClick={handleNavClick}>Our Team</a>
-        <a href="#contact" onClick={handleNavClick}>Contact Us</a>
-        <a href="#" className="cta">Shop</a>
-      </nav>
     </header>
-  )
+  );
 }
 
 export default Header;

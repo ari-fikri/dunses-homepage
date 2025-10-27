@@ -17,10 +17,7 @@
 
 html {
   scroll-behavior: smooth;
-}
-
-html {
-  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Adjust if header height changes */
 }
 
 html, body {
@@ -69,6 +66,10 @@ header {
   gap: 12px;
 }
 
+.brand-text p {
+  margin: 0;
+}
+
 .logo {
   width: 40px;
   height: 40px;
@@ -82,11 +83,16 @@ header {
   font-size: 18px;
 }
 
+nav {
+  flex-grow: 1;
+  text-align: center;
+}
+
 nav a {
   margin: 0 10px;
   color: var(--muted);
   text-decoration: none;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .cta {
@@ -336,4 +342,12 @@ section {
     padding: 16px;
     margin: 16px auto;
   }
+}
+
+.login-btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 18px;
 }
