@@ -29,11 +29,11 @@ function Contact() {
       <div className="contact">
         <form ref={form} onSubmit={handleSubmit}>
           <label htmlFor="name">Name</label>
-          <input id="name" className="input" placeholder="Name" name="user_name" required />
+          <input id="name" className="input" placeholder="Name" name="name" required />
           <label htmlFor="email">Email</label>
-          <input id="email" className="input" placeholder="Email" type="email" name="user_email" required />
+          <input id="email" className="input" placeholder="Email" type="email" name="email" required />
           <label htmlFor="phone">Mobile Phone Number</label>
-          <input id="phone" className="input" placeholder="Mobile Phone Number" name="user_phone" />
+          <input id="phone" className="input" placeholder="Mobile Phone Number" name="phone" />
           <label htmlFor="message">Message</label>
           <textarea id="message" className="input" rows="4" placeholder="Your message" name="message" required></textarea>
           <button className="submit" type="submit">Send Message</button>
