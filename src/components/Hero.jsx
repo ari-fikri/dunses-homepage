@@ -9,7 +9,7 @@ function Hero() {
           <h1>From Leaf to Cup — Artisan Teas, Naturally</h1>
           <p>Discover a selection of home-crafted teas, ethically sourced and sustainably grown.</p>
           <div className="btn-row">
-            <a className="btn primary" href="#">Shop Bestsellers</a>
+            <a className="btn primary" href="#">Get Quote</a>
             <a className="btn" href="#">Our Story</a>
           </div>
         </div>
