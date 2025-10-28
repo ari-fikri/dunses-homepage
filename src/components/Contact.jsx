@@ -13,6 +13,8 @@ function Contact() {
           <input id="name" className="input" placeholder="Name" />
           <label htmlFor="email">Email</label>
           <input id="email" className="input" placeholder="Email" />
+          <label htmlFor="phone">Mobile Phone </label>
+          <input id="phone" className="input" placeholder="Mobile Phone" />
           <label htmlFor="message">Message</label>
           <textarea id="message" className="input" rows="4" placeholder="Your message"></textarea>
           <button className="submit" type="submit">Send Message</button>
