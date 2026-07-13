@@ -157,7 +157,7 @@ nav a {
 }
 
 .btn {
-  padding: 10px 14px;
+  padding: 6px 14px;
   border-radius: 8px;
   border: 1px solid rgba(0,0,0,0.06);
   background: transparent;
@@ -169,6 +169,21 @@ nav a {
   background: var(--green);
   color: white;
   border: none;
+}
+
+.btn.start-chat {
+  background: #189710;
+  color: white;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: smaller;
+}
+
+.wa-icon {
+  width: 25px;
+  height: 25px;
 }
 
 .hero-right {
@@ -221,11 +236,23 @@ section {
   margin-bottom: 12px;
 }
 
+.card img.wa-icon {
+  margin-bottom: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.wa-icon {
+  width: 25px;
+  height: 25px;
+}
+
 .card h3 {
   margin: 0 0 8px 0;
   font-size: 18px;
   font-weight: 600;
   color: var(--accent);
+  padding: 0 16px;
 }
 
 .card p {
@@ -246,6 +273,7 @@ section {
 
 .card-footer {
   margin-top: auto;
+  padding: 0 16px 16px;
 }
 
 /* Services */
