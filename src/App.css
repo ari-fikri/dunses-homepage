@@ -181,11 +181,6 @@ nav a {
   font-size: smaller;
 }
 
-.wa-icon {
-  width: 25px;
-  height: 25px;
-}
-
 .hero-right {
   background: var(--panel);
   border-radius: 8px;
@@ -220,7 +215,7 @@ section {
 }
 
 .card {
-  background: var(--background-alt);
+  background: var(--card);
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -403,7 +398,7 @@ section {
     height: 300px;
   }
   .products {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
   .services {
     flex-direction: column;
@@ -417,6 +412,68 @@ section {
   .container {
     padding: 16px;
     margin: 16px auto;
+  }
+  header {
+    padding: 0 16px;
+    height: auto;
+    min-height: 70px;
+  }
+  .header-content {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  nav {
+    order: 3;
+    width: 100%;
+    text-align: center;
+  }
+  nav a {
+    font-size: 16px;
+    margin: 0 8px;
+  }
+  .hero-card {
+    margin-left: 0;
+  }
+  .hero-card h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 12px;
+  }
+  header {
+    padding: 10px 12px;
+  }
+  .brand-text p {
+    font-size: 14px;
+  }
+  .btn-row {
+    flex-direction: column;
+  }
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+  .btn.start-chat {
+    justify-content: center;
+  }
+  .section-title {
+    font-size: 20px;
+  }
+  .card h3 {
+    font-size: 16px;
+  }
+  .card p {
+    font-size: 12px;
+  }
+  .service {
+    flex-direction: column;
+    text-align: center;
+  }
+  .service-icon {
+    margin: 0 auto;
   }
 }
 
