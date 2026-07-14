@@ -41,7 +41,7 @@ function Contact() {
         <div style={{background: 'var(--card)', padding: '16px', borderRadius: '8px'}}>
           <h4>Contact Info</h4>
           <p style={{color: 'var(--muted)'}}>Address: Jl Terusan PPTK Gambung Km 3 No 12 Kec Pasirjambu, Kab Bandung, <br /> Jawa Barat 40231 - Indonesia</p>
-          <p style={{color: 'var(--muted)'}}>Phone: +62 81 220 19811</p>
+          <p style={{color: 'var(--muted)'}}>Phone: <a href="tel:+628122019811">+62 81 220 19811 (Call Now)</a></p>
           <p style={{color: 'var(--muted)'}}>Email: <a href="mailto:dunses12@gmail.com">dunses12@gmail.com</a></p>
           <p style={{color: 'var(--muted)'}}>IG : <a href="https://www.instagram.com/dutaniagasukses" target="_blank" rel="noopener noreferrer">@dutaniagasukses</a></p>
         </div>
