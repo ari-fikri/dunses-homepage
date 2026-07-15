@@ -5,20 +5,20 @@ import rizal from '../assets/rizal_profile.png';
 function Team() {
   return (
     <section id="team" aria-label="Our Team">
-      <h3 className="section-title">Our Team</h3>
+      <h2 className="section-title">Our Team</h2>
       <div className="team">
-        <div className="member">
+        <article className="member">
           <img src={musthopa} alt="Musthopa Syarifudin" />
-          <h4>Musthopa Syarifudin</h4>
+          <h3>Musthopa Syarifudin</h3>
           <p style={{color: 'var(--muted)'}}>Founder & Tea Specialist</p>
           <p className="quote" style={{fontSize: '13px', color: 'var(--muted)'}}>'We partner with small farmers to source the best leaves.'</p>
-        </div>
-        <div className="member">
+        </article>
+        <article className="member">
           <img src={rizal} alt="Rizal Firdaus" />
-          <h4>Rizal Firdaus</h4>
+          <h3>Rizal Firdaus</h3>
           <p style={{color: 'var(--muted)'}}>Director</p>
           <p className="quote" style={{fontSize: '13px', color: 'var(--muted)'}}>'We craft blends that tell a story.'</p>
-        </div>
+        </article>
       </div>
     </section>
   )

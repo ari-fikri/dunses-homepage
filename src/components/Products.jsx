@@ -14,7 +14,7 @@ function Products() {
 
   return (
     <section id="products" aria-label="Our Products">
-      <h3 className="section-title">Our Products</h3>
+      <h2 className="section-title">Our Products</h2>
       <div className="products">
         <article className="card">
           <img src={tea01} alt="Special Tea" />

@@ -25,7 +25,7 @@ function Contact() {
 
   return (
     <section id="contact" aria-label="Contact">
-      <h3 className="section-title">Contact Us</h3>
+      <h2 className="section-title">Contact Us</h2>
       <div className="contact">
         <form ref={form} onSubmit={handleSubmit}>
           <label htmlFor="name">Name</label>
@@ -39,7 +39,7 @@ function Contact() {
           <button className="submit" type="submit">Send Message</button>
         </form>
         <div style={{background: 'var(--card)', padding: '16px', borderRadius: '8px'}}>
-          <h4>Contact Info</h4>
+          <h3>Contact Info</h3>
           <p style={{color: 'var(--muted)'}}>Address: Jl Terusan PPTK Gambung Km 3 No 12 Kec Pasirjambu, Kab Bandung, <br /> Jawa Barat 40231 - Indonesia</p>
           <p style={{color: 'var(--muted)'}}>Phone: <a href="tel:+628122019811">+62 81 220 19811 (Call Now)</a></p>
           <p style={{color: 'var(--muted)'}}>Email: <a href="mailto:dunses12@gmail.com">dunses12@gmail.com</a></p>

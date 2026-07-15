@@ -312,7 +312,7 @@ section {
   flex: 1;
 }
 
-.service h4 {
+.service h3 {
   margin: 0 0 8px 0;
   color: var(--accent);
   font-size: 18px;
@@ -350,8 +350,9 @@ section {
   display: block;
 }
 
-.member h4 {
+.member h3 {
   margin: 6px 0;
+  font-size: 18px;
 }
 
 .member p {
