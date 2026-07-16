@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import ReactGA from 'react-ga4';
 
 function Contact() {
   const form = useRef();
@@ -17,6 +18,12 @@ function Contact() {
         console.log(result.text);
         alert('Message sent successfully!');
         form.current.reset();
+        //GA4 form submission (only on success)
+        ReactGA.event({
+          category: 'Contact',
+          action: 'Form Submitted',
+          label: 'Contact Form'
+        });
       }, (error) => {
         console.log(error.text);
         alert('Failed to send the message, please try again.');
